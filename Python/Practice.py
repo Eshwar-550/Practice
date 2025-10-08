@@ -1,21 +1,3 @@
-# Write a Python program that accepts two integers as input: a and b.Implement the following five functions using proper exception handling and logging:
-# 1. Prime Numbers Between a and b
-# Function Name: find_primes(a, b)
-# Find and return all prime numbers between a and b. Swap if a > b.
-# 2. Fibonacci Series of Length b
-# Function Name: fibonacci_series(length)
-# Print the first b numbers in the Fibonacci series. If b is negative or zero, raise an appropriate exception.
-# 3. Sum of Digits of a and b
-# Function Name: sum_of_digits(n)
-# Return the sum of digits of both a and b.
-# 4. Factorial of a and b
-# Function Name: calculate_factorial(n)
-# Compute the factorial of a and b. If either number is negative, raise an error.
-# 5. Count Even and Odd Numbers Between a and b
-# Function Name: count_even_odd(a, b)
-# Return the count of even and odd numbers in the range from a to b.
-
-
 # Write a Python function to flatten a nested list.
 # flatten([1, [2, [3, 4], 5], 6]) o/p: [1, 2, 3, 4, 5, 6]
 
