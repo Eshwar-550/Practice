@@ -14,7 +14,7 @@ with open("employees_data.csv",'r') as file:
     for i in rows:
         lines = i.strip().split(",")
 
-        query = "INSERT INTO employees VALUES (%s,%s,%s,%s);"
+        query = "INSERT INTO employees VALUES (%s,%s,%s,%s,%s);"
         cur.execute(query,lines)
 
 mydb.commit()
