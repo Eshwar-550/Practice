@@ -1,0 +1,55 @@
+Different Keys:
+
+1. Primary Key:
+
+Definition:
+A primary key is a unique identifier for each record in a database table, ensuring that no two rows have identical values and that every entry is uniquely identifiable.
+It is a column or set of columns that uniquely identifies each row in a table, and it must be unique and not null, preventing duplicate and null entries to maintain data integrity.
+
+Use Case:
+- Uniquely identify each record in a table.
+- Ensure data integrity by preventing duplicate and null values in the key column(s).
+- Serve as a reference for establishing relationships with other tables (through foreign keys).
+- Enable efficient data retrieval by creating an automatic index on the primary key.
+- Support reliable updates and deletions, since each row can be precisely targeted using its unique key.
+
+2. Secondary Key:
+
+Definition:
+A secondary key in a database is a field or combination of fields that can uniquely identify records but is not chosen as the primary key.
+It is also known as an alternate key or candidate key, meaning it has the potential to be a primary key but was not selected for that role.
+Secondary keys are used to provide alternative ways to retrieve, sort, or filter data, especially when the primary key is not known or when searching by common attributes like email or phone number.
+While they can be unique, secondary keys may also contain duplicate values and allow NULL entries, unlike primary keys which must be unique and non-null.
+
+Use Case:
+- Retrieve data based on non-unique attributes — useful when multiple records share the same value.
+- Support search, filtering, and sorting operations where the primary key is not relevant.
+- Enhance query performance when indexed, especially for frequently searched fields.
+- Enable grouping of records based on common characteristics (e.g., for reporting or analytics).
+
+3. Foreign Key:
+
+Definition:
+A foreign key is a column or set of columns in one table that references the primary key of another table, establishing a relationship between the two tables.
+The table containing the foreign key is known as the child or referencing table, while the table containing the primary key is called the parent or referenced table.
+
+Use Case:
+- Establish relationships between tables in a relational database (e.g., "one-to-many" or "many-to-one").
+- Maintain data integrity by ensuring that values in the foreign key column correspond to valid entries in the referenced table.
+- Enable relational queries by allowing data to be joined across tables.
+- Prevent orphan records — records in a child table that do not have a matching entry in the parent table.
+- Support normalization, where data is split into related tables to reduce redundancy and improve consistency.
+
+4. Alternate Key:
+
+Definition:
+An alternate key in a database management system (DBMS) is a candidate key that is not selected as the primary key but can still uniquely identify records within a table.
+While a table may have multiple candidate keys—each capable of uniquely identifying a record—only one is chosen as the primary key, and the remaining candidate keys become alternate keys.
+Alternate keys are also referred to as secondary keys and are often enforced using a UNIQUE constraint in SQL.
+
+Use Case:
+- Ensure uniqueness of important data fields other than the primary key.
+- Provide additional unique identifiers that can be used for validation or lookup.
+- Support business rules that require certain columns to be unique (e.g., email, social security number).
+- Allow flexibility for referencing or querying records by alternative unique fields.
+- Enable enforcing uniqueness without making the column the primary key.
