@@ -6,7 +6,7 @@
 
 import mysql.connector
 
-mydb = mysql.connector.connect(host="localhost", user="root", password="Assassincreed@3", database="practice")
+mydb = mysql.connector.connect(host="localhost", user="root", password="Eshwar@123", database="practice")
 cur = mydb.cursor()
 
 with open("employees_data.csv",'r') as file:
